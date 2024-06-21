@@ -1,0 +1,7 @@
+MMER_ID = pdb_6rd4_dimer
+MMER_SVOL = /templates/6rd4-dimer.mrc
+MMER_ISO = 0.10241597491902882
+PMER_L = 1.2
+PMER_L_MAX = 3000.0
+PMER_OCC = 0.5
+PMER_OVER_TOL = 0.01
