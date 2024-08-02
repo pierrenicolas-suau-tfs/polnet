@@ -107,5 +107,26 @@ The API documentation for polnet Python package is available in [docs/apidoc/ind
 
 [1] Martinez-Sanchez A.*, Jasnin M., Phelippeau H. and Lamm L. "Simulating the cellular context in synthetic datasets for cryo-electron tomography" *bioRxiv*
 
+# Launch with Docker
+
+## Build docker
+
+```
+bash create_docker.sh
+```
+
+## Digital sample generation
+First, you need to modify the config file (example:`scripts/config_sample.yaml`).
+
+```
+bash run_docker.sh --out_dir /path/to/output/directory --config /path/to/config_script.yaml
+```
+
+## Acquisition simulation
+First, you need to modify the config file (example:`scripts/config_acquisition.yaml`).
+```
+bash run_docker.sh --out_dir /path/to/output/directory --config /path/to/config_script.yaml
+```
+
 
 
