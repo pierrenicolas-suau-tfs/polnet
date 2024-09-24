@@ -1,7 +1,7 @@
 
 
 #docker run -e PYTHONUNBUFFERED=1 -v "/home/crougier/simulation/polnet/scripts/config_sample.yaml":/app/generation_config.yaml -v "/raid/data/crougier/simulatedTomo/test/":/app/outdir simu_polnet
-docker build .
+docker build ./ -t simu_polnet
 
 myUID=$UID 
 myGID=$(id -g $UID)

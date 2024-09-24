@@ -210,6 +210,9 @@ with open(out_config_path, "w") as f:
 myUID = os.environ["myUID"]
 myGID = os.environ["myGID"]
 
-command = "chown -R " + str(myUID) + ":" + str(myGID) + " " + str(output_dir)
+print("Coucou Chacha")
+print(myUID)
+
+command = "chown -R " + str(myUID) + ":" + str(myGID) + " " + str(out_dir)
 print(command)
 os.system(command)
