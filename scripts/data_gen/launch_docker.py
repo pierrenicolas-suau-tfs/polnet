@@ -204,3 +204,12 @@ elif step == "acquisition":
 
 with open(out_config_path, "w") as f:
     yaml.dump(config, f)
+
+
+# change ownership of the output directory
+myUID = os.environ["myUID"]
+myGID = os.environ["myGID"]
+
+command = "chown -R " + str(myUID) + ":" + str(myGID) + " " + str(output_dir)
+print(command)
+os.system(command)
